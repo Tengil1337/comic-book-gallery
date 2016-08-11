@@ -6,11 +6,12 @@ using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
-    public class ComicBooksController : Controller
+    public class HomeController : Controller
     {
-        public ActionResult Detail()
+        public ActionResult Index()
         {
-            return Redirect("/Derp");
+            return new RedirectResult("/");
+           
         }
     }
 }
